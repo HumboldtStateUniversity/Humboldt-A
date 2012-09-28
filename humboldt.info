@@ -1,0 +1,26 @@
+name = Humboldt
+description = General Use Template A. Offers home page, 2 column, and 3 column layout.
+core = 7.x
+
+; CSS
+stylesheets[all][] = style.css
+
+; Required Regions
+regions[content] = Content
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+
+; Regions
+regions[sidebar_first] = Left sidebar
+regions[header] =  Header
+regions[footer] =  Footer 
+regions[] = Help
+
+; Custom Regions
+regions[headerimage] = Header Image
+
+
+; Features
+features[] = main_menu
+features[] = secondary_menu
+features[] = name

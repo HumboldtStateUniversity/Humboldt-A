@@ -1,0 +1,455 @@
+/********************* LAYOUT DIVS ***********************/
+
+body {
+	margin: 0;
+	padding: 20px 0 0 0;
+	background: white url(images/bodyback.jpg) repeat-x 0 top;
+	background-attachment: fixed;
+	font-size: small;
+	font-family: "Lucida Grande","Lucida Sans Unicode",geneva,verdana,sans-serif;
+	line-height: 1.4em;
+	color: #666;
+	text-align: center;
+}
+div {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 760px;
+	margin: 0 auto;
+	background: white url(images/containerback.jpg) repeat-y left top;
+	border: solid 1px #666;
+	font-size: 95%;
+	text-align: left;
+}
+#contact {
+	width: 760px;
+	margin: 0 auto;
+	text-align: center;
+}
+#container *, #contact * {
+	/*text-align: left;*/
+}
+#branding {
+	height: 40px;
+	background: url(images/bar.jpg) no-repeat left top;
+}
+#nav-main {
+	float: left;
+	width: 165px;
+	padding: 15px 5px 50px 0;
+}
+#content {
+	float: left;
+	width: 575px;
+	padding: 5px 0 0 15px;
+	position: relative;
+}
+
+.col2 #content {
+	width: 530px;
+	padding: 5px 0 30px 15px;
+}
+#main #content {
+/*  background: url(images/banner.jpg) no-repeat 15px 45px;*/
+width: 560px;
+padding-right: 15px;
+padding-bottom: 30px;
+} 
+/********************* DRUPAL OVERRIDES ***********************/
+
+div.admin .left {
+	float: left;
+	width: 40%;
+	margin-left: 1em;
+}
+div.admin .right {
+	float: right;
+	width: 40%;
+	margin-right: 1em;
+}
+
+ul.secondary_links {
+	float:right; 
+	margin:2.25em -1.5em 0 1em;
+	background-color:#E4E4C8;
+	width:150px	;
+	border-left:dotted 1px #ccc;
+	padding:1em;
+	list-style:none;
+	min-height:200px;
+} 
+#block-user-0  {
+	padding:10px;
+} 
+/*.block h2 {
+	margin:20px 5px;
+}*/
+#tabs-wrapper {
+/*  margin: 0 -26px 1em;*/
+/*  padding: 0 26px;*/
+/*  border-bottom: 1px solid red;*/
+/*  position: relative;*/
+} 
+ul.primary, ul.secondary {
+	border-bottom:0 none;
+	margin:5px 0;
+	padding:5px 0 10px 0;
+} 
+ul.primary li a {
+	background: #F8F8F1;
+	border: solid 1px #c5c5c5;
+	color: #333;
+	padding: 5px 10px;  
+	height: auto;
+	margin-right: 0.5em; /* LTR */
+	text-decoration: none;
+}
+ul.primary li.active a {
+	background-color: #033334;
+	color:white;
+	border: solid 1px #c5c5c5;
+}
+ul.primary li a:hover {
+	background-color: #eee;
+	border-color: #ccc;
+	color:#333;
+}
+.form-required {
+	color:#542812;
+	font-size:120%;
+}                
+.item-list ul li {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0 0em;
+	padding:0;
+	border-top:none;
+} 
+/*#admin_menu {
+display: none;
+}*/
+
+#edit-submit,#edit-submit-1 {
+	margin-bottom:1em;  
+}
+
+/* override default dots and triangles for navigation */
+li.expanded {
+  list-style-type: none;
+  list-style-image: none;
+}
+li.collapsed {
+  list-style-type: none;
+  list-style-image: none;
+}
+ul li.leaf {
+   list-style-type: none;
+   list-style-image: none;
+}
+ul.menu li {
+margin: 0;
+}
+/*end of overrides*/  
+
+#text {
+	padding-right: 175px;
+	padding-bottom: 20px;
+	background: url(images/textback.gif) repeat-y right top;
+}
+.caption {
+	margin-bottom: 10px;
+}
+.clearer {
+	clear: left;
+	height: 0;
+	line-height: 0;
+}
+.skipper {
+	height: 0;
+	line-height: 0;
+	text-indent: -99999px;
+}
+/********************* LINKS ***********************/
+h1 a:visited, h1 a:link, p.logo a:link,p.logo a:visited {
+	border-bottom:none;
+}
+a:link {
+	color: #993300;
+	text-decoration: none;
+	border-bottom: dotted 1px #D7AE9A;
+}
+a:visited {
+	color: #01504C;
+	text-decoration: none;
+	border-bottom: dotted 1px #9ABAB8;
+}
+a:hover {
+	border-bottom-style: solid;
+}
+
+#branding a, #nav-main #main-menu a, #nav-secondary a {
+	border: none;
+	display: block;
+	color: #333;
+}
+
+#nav-main #main-menu a {
+	padding: 7px 5px 7px 8px;
+}
+#nav-main #main-menu a a:hover, #nav-main #main-menu a .active, #main #home  {
+	background: url(images/hover.jpg) repeat-y left top;
+}
+.contextual-links-wrapper a:link {
+	border-bottom: none;
+}
+#nav-secondary a {
+	padding: 0 0 0 18px;
+}
+#nav-secondary a:hover, #nav-secondary a.active {
+	background: url(images/indicator.gif) no-repeat 5px 6px;
+}
+.jumpto a:link, .jumpto a:visited {
+	border: none;
+	color: #666;
+}
+.caption a {
+	border: none;
+}
+.content {
+	margin-right: 10px;
+}
+
+/********************* Hx ***********************/
+
+h2, h3, h4, h5, h6 {
+	color: #333;
+	font-size: 130%;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+.front h1.title, p#department {
+	margin-bottom: 10px;
+	font-size:200%;
+	color:#003333;
+	margin: 0 0 20px 0;
+	padding:0;
+	font-weight:normal;
+}
+p#department a:link {text-decoration: none;border-bottom: none;}
+p#department a:visited {color:#003333;border-bottom: none;text-decoration: none;}
+h1.title {
+	font-size: 170%;
+	font-weight: normal;
+	color: #666;
+	margin: 0 0 25px;
+} 
+.front h2 {
+	font-size: 120%;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 5px;
+}
+h2 {
+	line-height: 1.5em;
+	margin: 0 0 5px 0;
+} 
+#admin_menu h2 {
+	margin:0;
+	padding:0;
+	line-height:1.5em;
+	font-size:120%;
+	padding:20px 0 10px 10px;
+}
+h3 {
+	font-size: 110%;
+}
+h4 {
+	font-size: 1em
+}
+/********************* P ***********************/
+
+p {
+	margin: 0 0 1.5em 0;
+}
+#branding p {
+	margin: 0;
+	padding: 5px 10px;
+}
+#contact p, #contact span {
+	color: #003333;
+	font-size: 80%;
+	padding: 5px 0 0 0;
+}
+#comment_form p {
+	margin-bottom: .5em;
+}
+#content .caption p {
+	font-size: 90%;
+	font-style: italic;
+}
+p.logo {
+	margin-bottom:3px;
+}
+/********************* LISTS ***********************/
+
+ul, ol {
+	margin: 0 0 1.5em 15px;
+	padding: 0;
+}
+ol {
+	margin-left: 20px;
+}
+#nav-main ul {
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+	list-style: none;
+	border-top: solid 1px #fff;
+}
+/*.nav-secondary ul {
+list-style: none;
+font-size: 90%;
+}                  */
+li {
+	margin-bottom: 1em;
+}
+#nav-main li {
+	border-bottom: solid 1px #fff;
+	margin-bottom: 0;
+}
+#nav-secondary ul {
+	width: 155px;
+	background: #F8F8F1 url("images/navsecback.jpg") repeat-x left top;
+	padding-top: 30px;
+	float: right;
+	height: 100%;
+}
+#nav-secondary li {
+	padding: 0 10px 10px 0;
+	margin-bottom: 0;
+/*	margin-left: -10px;*/
+}
+ul.jumpto {
+	background: url("images/grayfade.jpg") repeat-y left top;
+	margin: 0 0 20px 0;
+	padding: 2px 0 2px 20px;
+	float: left;
+	width: 380px;
+	position: relative;
+	left: -20px;
+}
+ul.jumpto li {
+	display: inline;
+	background: url("images/arrows.gif") no-repeat left center; 
+	margin: 0 30px 0 0;
+	padding: 0 0 0 12px;
+}
+dt {
+	margin: 1em 0 .5em;
+	font-size: 120%;
+}
+dd {
+	margin: 0;
+	padding: 0;
+}
+dl.illustrated {
+	float: left;
+	margin: 0 0 15px 0;
+	width: 400px;
+}
+.illustrated dt {
+	margin-top: 0;
+	float: right;
+	width: 325px;
+}
+.illustrated dd{
+	margin: 0 0 0 75px;
+}
+.illustrated dd.thumbnail {
+	margin: 0;
+}
+.illustrated dd.thumbnail img {
+	float: left;
+}
+
+/********************* FORMS ***********************/
+input, textarea {
+	background: #F8F8F1;
+	border: solid 1px #c5c5c5;
+	color: #333;
+	padding: 3px;
+}
+label {
+	font-weight: bold;
+	color: #333;
+}
+#search-block-form {margin-top: 18px;}
+/********************* IMAGES ***********************/
+a img {
+	border: none;
+}     
+
+.caption img, .thumbnail img, .thumb {
+	padding: 10px;
+	border: solid 2px #999;
+	border-top: solid 1px #ccc;
+	border-left: solid 1px #ccc;
+}
+.thumbnail img {
+	padding: 5px;
+	margin: 0 10px 10px 0;
+}
+/********************* TABLES ***********************/
+table {
+	margin:  1em 0 1.5em 0;
+	padding: 0 ;
+	width: 99%;
+}
+
+caption  {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+th {
+	text-align: left;
+	border-bottom: solid 1px #737373;
+	line-height: 1.2em;
+	font-size: 85%;
+	padding: 5px 10px;
+	background: #F8F8F1;
+}
+
+td {
+	border-bottom: solid 1px #ccc;
+	line-height: 1.2em;
+	font-size: 85%;
+	padding: 5px 10px;
+}
+
+/********************* MISC ***********************/
+strong {
+	color: #333;
+}
+pre {
+	background: #F8F8F1;
+	border: solid 1px #c5c5c5;
+	color: #333;
+	padding: 3px;
+}
+code {
+	background: #F8F8F1;
+	color: #333;
+	padding: 3px;
+}
+.left {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.right {
+	float: right;
+	margin: 0 0 10px 10px;
+}
