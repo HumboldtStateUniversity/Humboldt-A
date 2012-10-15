@@ -137,11 +137,14 @@ display: none;
 }
 
 /* override default dots and triangles for navigation */
-li.expanded {
+#admin_menu .content {
+	margin-right: 0;
+}
+.menu li.expanded {
   list-style-type: none;
   list-style-image: none;
 }
-li.collapsed {
+.menu li.collapsed {
   list-style-type: none;
   list-style-image: none;
 }
@@ -151,6 +154,7 @@ ul li.leaf {
 }
 ul.menu li {
 margin: 0;
+padding: 0;
 }
 /*end of overrides*/  
 
@@ -190,16 +194,16 @@ a:hover {
 	border-bottom-style: solid;
 }
 
-#branding a, #nav-main #main-menu a, #nav-secondary a {
+#branding a, #nav-main #main-menu a, #nav-secondary a, #nav-main .menu a {
 	border: none;
 	display: block;
 	color: #333;
 }
 
-#nav-main #main-menu a {
+#nav-main #main-menu a, .menu a {
 	padding: 7px 5px 7px 8px;
 }
-#nav-main #main-menu a:hover, #nav-main #main-menu a.active, #main #home  {
+#nav-main #main-menu a:hover, #nav-main #main-menu a.active, #main #home, .menu a:hover  {
 	background: url(images/hover.jpg) repeat-y left top;
 }
 .contextual-links-wrapper a:link {
