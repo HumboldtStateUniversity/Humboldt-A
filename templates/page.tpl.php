@@ -11,7 +11,8 @@
 	   </div> 
 	</div>
 	<div id="content">
-		<p id="department"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a></p>		
+		<p id="department"><a href="<?php print $front_page ?>"><?php print $site_name; ?></a></p>
+		<?php print $messages; ?>
 		<div id="nav-secondary">
 		<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>			 <?php print $messages; ?>
 		</div>

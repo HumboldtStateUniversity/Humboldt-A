@@ -225,7 +225,9 @@ a:hover {
 .content {
 	margin-right: 10px;
 }
-
+div.messages{
+	margin: 10px 20px 20px 0;
+}
 /********************* Hx ***********************/
 
 h2, h3, h4, h5, h6 {
