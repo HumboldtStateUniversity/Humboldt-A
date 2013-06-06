@@ -1,4 +1,4 @@
-name = Humboldt
+name = Humboldt A
 description = General Use Template A. Offers home page, 2 column, and 3 column layout.
 core = 7.x
 
@@ -24,3 +24,4 @@ regions[headerimage] = Header Image
 features[] = main_menu
 features[] = secondary_menu
 features[] = name
+humboldt-drupal-theme-a
